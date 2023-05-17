@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+.section-form {
+   align-items: center;
+   background-image: linear-gradient(90deg, #f7f7f7, #d9d9d9);
+   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+   border-radius: 1rem;
+   flex-direction: column;
+   justify-content: space-around;
+   padding: 0 1rem;
+   margin-bottom: 4rem;
+}
+
+.cell-form {
+   display: flex;
+   flex-direction: column;
+   min-height: 50vh;
+   position: relative;
+   width: 100%;
+   max-width: 300px;
+}
+
+.cell-form:nth-child(2n) {
+   flex-direction: column-reverse;
+}
+
+.cell-form:nth-child(1n) .tab-form {
+   border-radius: 0 0 1rem 1rem;
+}
+
+.cell-form:nth-child(2n) .tab-form {
+   border-radius: 1rem 1rem 0 0;
+}
+
+.tab-form {
+   align-items: center;
+   background-color: var(--color-white);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 1rem;
+   width: 100%;
+}
+
+.head-form {
+   align-items: center;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   text-align: center;
+   transform: translate(-50%, -50%);
+   width: 100%;
+}
+
+.bar-form {
+   align-items: center;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   padding: 0.75rem;
+}
+
+.content-form {
+   align-items: center;
+   display: flex;
+   min-height: 50vh;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%;
+}
+
+.content-form .button-main {
+   display: block;
+   margin: 1rem auto;
+}
+
+.content-form > * {
+   margin: 1rem 0;
+}
+
+.filed-form {
+   color: var(--color-gray);
+   position: relative;
+   width: 100%;
+}
+
+.filed-form label {
+   position: absolute;
+   left: 0;
+   transition-duration: 0.1s;
+}
+
+.filed-form input {
+   border-bottom: 1px solid var(--color-primary-2);
+   width: 100%;
+}
+
+.filed-form input:focus ~ label, .filed-form input:valid ~ label{
+   font-size: 0.75rem;
+   color: var(--color-primary-3);
+   transform:translateY(-20px);
+}
+
+.checkbox-form {
+   align-items: center;
+   display: flex;
+}
+
+@media (min-width: 720px) {
+   .section-form {
+      flex-direction: row;
+      align-items: start;
+   }
+   .cell-form {
+      min-height: 80vh;
+   }
+   .head-form {
+      flex-direction: column;
+   }
+}

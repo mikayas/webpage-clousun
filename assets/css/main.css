@@ -1,0 +1,39 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@500;600;700&display=swap');
+
+:root {
+   --color-white: #FFFFFF;
+   --color-black: #000000;
+   --color-gray: #898989;
+   --color-primary-1: #001014;
+   --color-primary-2: #001B19;
+   --color-primary-3: #006363;
+   --color-primary-4: #56FCAC;
+   --font-default: 'Saira', sans-serif;
+   --font-main: 'Audiowide', monospace;
+}
+
+* {
+   box-sizing: border-box;
+   border: none;
+   font: 500 16px var(--font-default);
+   margin: 0;
+   padding: 0;
+   outline: 0;
+}
+
+body {
+   background-image: url("../img/background.jpg");
+   background-repeat: no-repeat;
+}
+
+img {
+   width: 100%;
+}
+
+@media (max-width: 240px) {
+   * {
+      word-break: break-all;
+   }
+}

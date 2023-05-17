@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+html {scroll-behavior: smooth;}
+
+.link-button {
+   display: block;
+   text-decoration: none;
+   color: var(--color-primary-1);
+   width: 100%;
+}
+
+.link-button:hover {
+   color: var(--color-primary-3);
+}
+
+.header-bar {
+   z-index: 1;
+}
+
+.header-bar span {
+   color: var(--color-primary-2);
+   font-family: var(--font-main);
+}
+
+.headline h1 {
+   color: var(--color-primary-3);
+   font: 500 1.5rem var(--font-main);
+   width: 100%;
+   max-width: 460px;
+}
+
+.headline strong {
+   color: var(--color-primary-2);
+   font: 700 2rem var(--font-main);
+}
+
+.container-label {
+   justify-content: start;
+}
+
+.container-label span {
+   text-align: center;
+}
+
+.section-welcome {
+   margin-top: 0;
+}
+
+.footer-bar {
+   background-color: var(--color-primary-1);
+   color: var(--color-white);
+   min-height: 144px;
+}
+
+.footer-bar * {
+   font: 400 0.75rem var(--font-default);
+}
+
+.footer-right {
+   align-items: center;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.footer-right span {
+   color: var(--color-primary-4);
+   font: 500 1rem var(--font-main);
+}
+
+.footer-bar p {
+   width: 100%;
+   max-width: 360px;
+}
+
+@media (min-width: 480px) {
+   .header-bar span {font-size: 1.5rem;}
+}
+
+@media (min-width: 720px) {
+   .header-bar span {font-size: 2rem;}
+   .headline h1 {
+      font-size: 2rem;
+      max-width: 520px;
+   }
+}
+
+@media (min-width: 996px) {
+   .headline h1 {max-width: 680px;}
+   .headline strong {font-size: 2.5rem;}
+   .container-label span {
+      margin: 0 1rem;
+      text-align: start;
+   }
+}
