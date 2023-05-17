@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8"/>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   <link rel="stylesheet" href="assets/css/main.css"/>
+   <link rel="stylesheet" href="assets/css/components.css"/>
+   <link rel="stylesheet" href="assets/css/forms.css"/>
+   <link rel="stylesheet" href="assets/css/style.css"/>
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <title>clousun | page and form</title>
+</head>
+<body>
+   <header class="container-topbar header-bar">
+      <img class="img-normal" src="assets/svg/logo-dark.svg" alt="logo"/>
+      <span>CLOUSU</span>
+   </header>
+   <main class="container-page">
+      <section class="container-section section-welcome">
+         <div>
+            <div class="container-content headline">
+                  <h1>
+                     <strong>Lorem ipsum</strong> amet leo nibh sit dolor molestie <strong>eleifend</strong> nec odio <strong>hendrerit</strong>
+                  </h1>
+                  <img class="img-bigger" src="assets/svg/illustration-blocks.svg" alt="blocks"/>
+            </div>
+            <div class="container-content container-label">
+                  <button class="button-main">
+                     <a class="link-button" href="#anc-form">let's go</a>
+                  </button>
+                  <span>Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+            </div>
+         </div>
+      </section>
+      <section class="container-section">
+         <div class="container-content">
+               <div class="container-card">
+                  <img class="img-regular" src="assets/svg/block-features-laptop.svg" alt="laptop"/>
+                  <span><strong>pop-up</strong> Lorem ipsum dapibus feugiat.</span>
+               </div>
+               <div class="container-card">
+                  <img class="img-regular" src="assets/svg/block-features-coffee.svg" alt="coffen"/>
+                  <span><strong>views</strong> Lorem ipsum consectetur adipiscing.</span>
+               </div>
+               <div class="container-card">
+                  <img class="img-regular" src="assets/svg/block-features-server.svg" alt="server"/>
+                  <span><strong>connections</strong> Lorem ipsum convallis lorem.</span>
+               </div>
+         </div>
+      </section>
+      <section class="container-section">
+         <div class="container-content">
+            <img class="img-big" src="assets/svg/illustration-whale.svg" alt="whale"/>
+            <div class="features">
+               <p class="font-subtitle">Lorem ipsum dolor adipiscing sit amet, consectetur elit etiam. </p>
+               <p>Sed faucibus id eros tellus. Mattis ullamcorper nisi ultricies finibus lectus. Curabitur condimentum, in ultrices, nulla ipsum, lacinia eros arcu vel velit.</p>
+               <div class="container-groups">
+                  <div>
+                     <div class="container-block">
+                        <img class="img-small" src="assets/svg/icon-books.svg" alt="books"/>
+                        <span>Ut sit amet malesuada risus</span>
+                     </div>
+                     <div class="container-block">
+                        <img class="img-small" src="assets/svg/icon-battery.svg" alt="battery"/>
+                        <span>Etiam dui ex, fermentum vitae</span>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="container-block">
+                        <img class="img-small" src="assets/svg/icon-team.svg" alt="team"/>
+                        <span>Vestibulum ante ipsum primis</span>
+                     </div>
+                     <div class="container-block">
+                        <img class="img-small" src="assets/svg/icon-pen.svg" alt="pen"/>
+                        <span>Ultrices posuere cubilia curae</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <a name="anc-form"></a>
+      <section class="container-section section-form">
+         <div class="cell-form">
+            <div class="tab-form">
+               <div class="bar-form">
+                  <img class="img-small" src="assets/svg/icon-user-register.svg" alt="register"/>
+                  <span>register account</span>
+               </div>
+               <form id="form-create-account" class="content-form">
+                  <div class="filed-form">
+                     <input id="create-name" type="text" required/>
+                     <label for="create-name">Name</label>
+                  </div>
+                  <div class="filed-form">
+                     <input id="create-email" type="text" required/>
+                     <label for="create-email">email</label>
+                  </div>
+                  <div class="filed-form">
+                     <input id="create-password" type="password" required/>
+                     <label for="create-password">create password</label>
+                  </div>
+                  <div class="filed-form">
+                     <input id="create-confirm" type="password" required/>
+                     <label for="create-confirm">confirm password</label>
+                  </div>
+                  <div class="checkbox-form">
+                     <input type="checkbox"/>
+                     <span class="font-subtext">I want to proceed</span>
+                  </div>
+                  <button class="button-main" type="button">register</button>
+               </form>
+               <button id="btn-tab-form-top" class="button-tab"></button>
+            </div>
+            <div id="head-form-create" class="head-form">
+               <img class="img-normal" src="assets/svg/logo-white.svg" alt="logo"/>
+               <p>login to enter your account</p>
+            </div>
+         </div>
+         <div class="cell-form">
+            <div class="tab-form">
+               <button id="btn-tab-form-bottom" class="button-tab"></button>
+               <div class="bar-form">
+                  <img class="img-small" src="assets/svg/icon-user-login.svg" alt="register"/>
+                  <span>login account</span>
+               </div>
+               <form id="form-login-account" class="content-form">
+                  <div class="filed-form">
+                     <input id="create-user" type="text" required/>
+                     <label for="create-user">username or email</label>
+                  </div>
+                  <div class="filed-form">
+                     <input id="create-pass" type="password" required/>
+                     <label for="create-pass">your password</label>
+                  </div>
+                  <button class="button-main" type="button">enter</button>
+               </form>
+            </div>
+            <div id="head-form-login" class="head-form">
+               <img class="img-normal" src="assets/svg/logo-white.svg" alt="logo"/>
+               <p>create an account to login</p>   
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer class="container-footer footer-bar">
+      <span class="footer-right">
+         all rifght reserved<img class="img-small" src="assets/svg/logo-white.svg" alt="logo">
+         <span>CLOUSUN</span>group
+      </span>
+      <p>Lorem ipsum dolor sit amet augue feugiat tellus. Donec sed dictum quis tortor adipiscing.</p>
+   </footer>
+   <script src="assets/js/script.js"></script>
+</body>
+</html>
